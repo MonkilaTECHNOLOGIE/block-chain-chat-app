@@ -5,7 +5,66 @@ import mainLogo from './arrow.png'
 
 class Chat extends Component {
 
-   
+    async componentWillMount() {
+        await this.loadWeb3()
+        await this.loadBlockchainData()
+        await this.listenToMessages()
+        await this.listenToEther()
+        await this.listenToAskEther()
+        await this.listenToFetchAllMsg()
+        await this.fetchAllMsg()
+        await this.updateUIData()
+      }
+
+    constructor(props) {
+        super(props)
+        let chats = [
+            {
+                msg: "This is a blockchain demo, try to tap in!",
+                response: true
+            },
+            {
+                msg: "Enter \"send_ether: 0.0001\" to send some tokens to your recipient 😃",
+                response: false
+            }
+        ]
+        this.state = {
+            fixedChats: chats,
+            chats: [],
+            inputValue: '',
+            accounts: [],
+            account: '',
+            nbBlocks: 0,
+            otherAccount: '',
+            accountNbTransactions: 0,
+            otherAccountNbTransactions: 0,
+            accountBalance: 0,
+            otherAccountBalance: 0,
+            lastGas: 0,
+            blockHash: '',
+            didATransaction: false,
+            isLastTransactionSuccess: false,
+            didARequest: false,
+            accountRequesting: '',
+            accountRequested: '',
+            valueRequested: 0,
+        }
+    }
+
+    // ------- init ------
+    async loadWeb3() {
+        if (window.ethereum) {
+    
+          window.web3 = new Web3(Web3.providers.WebsocketProvider("ws://localhost:7545"))
+          await window.ethereum.enable()
+        }
+        else if (window.web3) {
+          window.web3 = new Web3(window.web3.currentProvider)
+        }
+        else {
+          window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+        }
+      }
 
     async loadBlockchainData()  {
         const web3 = window.web3
