@@ -1,0 +1,231 @@
+body {
+    padding: 2%;
+    background-color: #F5F5F5;
+  }
+  
+  .block-container {
+    padding:0;
+    background-color: #FFF; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    min-height: 670px;
+  }
+
+  
+  .chat {
+    width: 100%;
+  }
+  
+  .header-chat {
+    background-color: #FFF;
+    height: 90px;
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.100);
+    display:flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .arrow {
+      width: 30px;
+      position: absolute;
+      left: 49%;
+  }
+  
+  .chat .header-chat .icon {
+    margin-left: 30px;
+    color:#515151;
+    font-size: 14pt;
+  }
+  
+  .chat .header-chat .name {
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    font-size: 13pt;
+    color:#515151;
+  }
+  
+  .chat .messages-chat {
+    padding: 25px 35px;
+    overflow: auto;
+    display:flex;
+    flex-direction:column-reverse;
+    height: 500px;
+  }
+  
+  .chat .messages-chat .message {
+    display:flex;
+    align-items: center;
+    /* margin-bottom: 8px; */
+  }
+  
+  .chat .messages-chat .message .photo {
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: #E6E7ED;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .chat .messages-chat .text {
+    /* margin: 0 35px; */
+    background-color: #E2F0D9;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .text-only {
+    margin-left: 45px;
+  }
+  
+  .time {
+    font-size: 10px;
+    color:lightgrey;
+    /* margin-bottom:10px; */
+    margin-left: 85px;
+  }
+  
+  .response-time {
+    float: right;
+    margin-right: 40px !important;
+  }
+  
+  .response {
+    float: right;
+    margin-right: 0px !important;
+    margin-left:auto; /* flexbox alignment rule */
+  }
+  
+  .response .text {
+    background-color: #e3effd !important;
+  }
+  
+  .footer-chat {
+    height: 80px;
+    display:flex;
+    align-items: center;
+    background-color: transparent;
+    border-top: 2px solid #EEE;
+    
+  }
+  
+  .chat .footer-chat .icon {
+    margin-left: 30px;
+    color:#C0C0C0;
+    font-size: 14pt;
+  }
+  
+  .chat .footer-chat .send {
+    color:#fff;
+    background-color: #4f6ebd;
+    /* position: absolute; */
+    /* right: 50px; */
+    padding: 12px 12px 12px 12px;
+    border-radius: 50px;
+    font-size: 14pt;
+  }
+  
+  .chat .footer-chat .name {
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    font-size: 13pt;
+    color:#515151;
+  }
+  
+  .chat .footer-chat .right {
+    /* position: absolute; */
+    right: 40px;
+  }
+  
+  .write-message {
+    border:none !important;
+    width:100%;
+    height: 50% !important;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  .send-btn {
+      margin-right: 50px;
+  }
+  
+  .footer-chat *::-webkit-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *:-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *::-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+    margin-left:5px;
+  }
+  .footer-chat input *:-ms-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+
+  .left {
+      float: left;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    display: flex;
+      justify-content: center;
+}
+
+.custom-select {
+    width: 70%;
+}
+
+.right-block {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.04);
+    padding-right: 0px !important;
+}
+
+.left-block {
+    padding-right: 0px !important;
+}
+
+.row {
+    margin-right: 0px !important;
+    
+}
+
+.blockchain-block {
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 30px;
+    overflow: scroll;
+}
+
+.sender-block {
+    background-color: #e3effd;
+}
+
+.recip-block {
+    background-color: #E2F0D9;
+}
+
+.didAskContainer {
+  margin-top: 15px;
+  overflow: scroll;
+}
