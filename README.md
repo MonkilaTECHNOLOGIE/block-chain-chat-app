@@ -1,5 +1,5 @@
 # blockchain-chat-app
-Simple Ethereum blockchain app for messaging and ether sending between Ganache addresses.
+Simple Ethereum blockchain chat app for messaging and ether sending between Ganache addresses.
 
 ## Deploy
 You first need to run Ganache on localhost:7545, install metamask in the browser, install dependencies and finally fire the react server.
