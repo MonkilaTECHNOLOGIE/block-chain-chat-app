@@ -89,7 +89,7 @@ class Chat extends Component {
           this.setState({ chatContract: chatContract })
         }
         else {
-            window.alert('Chat contract not deployed to detected network.')
+            window.alert('Chat contract not deployed to detected network')
         }
     }
 
@@ -406,7 +406,7 @@ class Chat extends Component {
                             </div>
                         </section>
                         <div class="footer-chat">
-                            <i class="icon fa fa-smile-o clickable" style={{fontSize: "25pt"}} aria-hidden="true"></i>
+                            <i class="icon fa fa-smile-o clickable" style={{fontSize: "24pt"}} aria-hidden="true"></i>
                             <input value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)} type="text" class="write-message" placeholder="Type your message here"></input>
                             <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
                             <button class="btn btn-success send-btn" onClick={() => this.didSendMessage(this.state.inputValue)}>Send</button>
