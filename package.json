@@ -2,7 +2,7 @@
     "name": "blockchain-chat-app",
     "version": "0.1.0",
     "description": "A secured messaging app using blockchain.",
-    "author": "joe monkila",
+    "author": "Joe monkila",
     "dependencies": {
       "babel-polyfill": "6.26.0",
       "babel-preset-env": "1.7.0",
