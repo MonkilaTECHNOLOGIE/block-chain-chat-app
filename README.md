@@ -1,4 +1,4 @@
-# blockchain-chat-app
+# blockchain-chat-app w3
 Simple Ethereum blockchain chat app for messaging and ether sending between Ganache addresses.
 
 ## Deploy
