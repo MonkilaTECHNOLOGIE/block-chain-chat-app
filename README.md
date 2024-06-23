@@ -13,4 +13,5 @@ npm run start
 * send messages between these addresses
 * store all the messages in the smart contract in order to fetch them back when the page is reloaded
 * monitor the state of the blockchain in real time when the transactions are executed
-* send ethereum between the addresses
+* send ethereum between the addresses v
+🎉
