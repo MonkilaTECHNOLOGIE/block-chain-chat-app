@@ -15,3 +15,8 @@ npm run start
 * monitor the state of the blockchain in real time when the transactions are executed
 * send ethereum between the addresses v
 🎉
+
+
+## Auteur
+
+Ce projet a été créé par [Joe Monkila](https://github.com/JoeM1990).
